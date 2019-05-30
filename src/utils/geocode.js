@@ -13,7 +13,6 @@ const geoCode = (address, callback) => {
                 longitude: res.body.features[0].center[1],
                 location: res.body.features[0].place_name
             })
-            console.log(`Latitude: ${res.body.features[0].center[0]}, Longitude: ${res.body.features[0].center[1]}`);
         }
     });
 }
